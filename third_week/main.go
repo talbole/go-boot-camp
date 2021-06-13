@@ -24,6 +24,7 @@ func main() {
 		http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 			fmt.Fprintf(w, "hello word")
 		})
+
 		return s.ListenAndServe()
 	})
 
